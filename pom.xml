@@ -25,6 +25,20 @@
 	</properties>
 
 	<dependencies>
+		<distributionManagement>
+	<repository>
+		<id>deploymentRepo</id>
+		<name>Internal Releases</name>
+		<url>http://35.190.131.117:8081/repository/maven-releases/</url>
+	</repository>
+ 
+	<snapshotRepository>
+		<id>deploymentRepo</id>
+		<name>Internal Releases</name>
+		<url>http://35.190.131.117:8081//repository/maven-snapshots/</url>
+	</snapshotRepository>
+</distributionManagement>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -65,17 +79,5 @@
 			</plugin>
 		</plugins>
 	</build>
-<distributionManagement>
-	<repository>
-		<id>deploymentRepo</id>
-		<name>Internal Releases</name>
-		<url>http://35.190.131.117:8081/repository/maven-releases/</url>
-	</repository>
- 
-	<snapshotRepository>
-		<id>deploymentRepo</id>
-		<name>Internal Releases</name>
-		<url>http://35.190.131.117:8081//repository/maven-snapshots/</url>
-	</snapshotRepository>
-</distributionManagement>
+
 </project>
