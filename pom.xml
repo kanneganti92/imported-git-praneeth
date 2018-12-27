@@ -25,6 +25,7 @@
 	</properties>
 
 	<dependencies>
+		
 		<distributionManagement>
 	<repository>
 		<id>deploymentRepo</id>
